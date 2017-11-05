@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "create": "serverless create --template aws-nodejs --path",
+    "invoke": "serverless invoke -l -f",
+    "prepare": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1",
+    "serverless": "^1.24.0",
+    "ts-jest": "^21.1.4",
+    "typescript": "^2.6.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "^.+\\.test\\.ts",
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ]
+  },
+  "dependencies": {
+    "@types/lodash.partial": "^4.2.3",
+    "lodash.partial": "^4.2.1"
+  }
+}

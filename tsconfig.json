@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "rootDir": ".",
+    "outDir": "dist",
+    "listEmittedFiles": true,
+    "lib": [
+       "es5",
+       "esnext"
+     ]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ]
+}
